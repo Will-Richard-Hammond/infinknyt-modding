@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/frostwood_plank"
+    "all": "infinknyt:block/frostwood_plank"
   }
 }

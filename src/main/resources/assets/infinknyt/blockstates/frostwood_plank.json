@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "tutorialmod:block/frostwood_plank"
+      "model": "infinknyt:block/frostwood_plank"
     }
   }
 }
