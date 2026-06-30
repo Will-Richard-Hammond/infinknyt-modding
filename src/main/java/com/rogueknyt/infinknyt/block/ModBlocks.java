@@ -25,6 +25,16 @@ public class ModBlocks {
 
             )
     );
+    public static final Block FROSTWOOD_LOG = registerBlock("frostwood_log",
+            new Block(AbstractBlock.Settings
+                    .create()
+                    .strength(2f, 3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+
+            )
+    );
 
 
     private static Block registerBlock(String name, Block block){
