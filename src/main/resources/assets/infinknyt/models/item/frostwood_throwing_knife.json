@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "infinknyt:item/frostwood_throwing_knife"
+  }
+}
