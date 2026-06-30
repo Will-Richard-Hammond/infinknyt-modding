@@ -1,11 +1,9 @@
 package com.rogueknyt.infinknyt.block;
 
 import com.rogueknyt.infinknyt.InfinKnyt;
+import com.rogueknyt.infinknyt.block.custom.FrostwoodCraftingTableBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -20,7 +18,6 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings
                     .create()
                     .strength(2f, 3f)
-                    .requiresTool()
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()
 
@@ -30,7 +27,6 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings
                     .create()
                     .strength(2f, 3f)
-                    .requiresTool()
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()
 
@@ -40,10 +36,17 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings
                     .create()
                     .strength(2f, 3f)
-                    .requiresTool()
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()
 
+            )
+    );
+    public static final Block FROSTWOOD_CRAFTING_TABLE = registerBlock("frostwood_crafting_table",
+            new FrostwoodCraftingTableBlock(AbstractBlock.Settings
+                    .create()
+                    .strength(2.5f, 3f)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
             )
     );
 
@@ -65,6 +68,7 @@ public class ModBlocks {
             entries.add(ModBlocks.FROSTWOOD_PLANK);
             entries.add(ModBlocks.FROSTWOOD_LOG);
             entries.add(ModBlocks.STRIPPED_FROSTWOOD_LOG);
+            entries.add(ModBlocks.FROSTWOOD_CRAFTING_TABLE);
         } );
     }
 }

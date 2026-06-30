@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "infinknyt:block/frostwood_log_top",
+    "side": "infinknyt:block/stripped_frostwood_log"
+  }
+}

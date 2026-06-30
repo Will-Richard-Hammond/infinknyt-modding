@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "infinknyt:block/frostwood_crafting_table_side_1",
+    "down": "infinknyt:block/frostwood_plank",
+    "up": "infinknyt:block/frostwood_crafting_table_top",
+    "north": "infinknyt:block/frostwood_crafting_table_side_1",
+    "east": "infinknyt:block/frostwood_crafting_table_side_1",
+    "south": "infinknyt:block/frostwood_crafting_table_side_2",
+    "west": "infinknyt:block/frostwood_crafting_table_side_2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "infinknyt:frostwood_log"
+    }
+  ],
+  "result": {
+    "item": "infinknyt:frostwood_plank",
+    "count": 4
+  }
+}

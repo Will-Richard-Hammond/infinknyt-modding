@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "infinknyt:frostwood_plank"
+    }
+  },
+  "result": {
+    "item": "infinknyt:frostwood_crafting_table",
+    "count": 1
+  }
+}

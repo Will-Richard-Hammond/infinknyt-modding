@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "infinknyt:frostwood_plank",
+    "infinknyt:frostwood_log",
+    "infinknyt:stripped_frostwood_log",
+    "infinknyt:frostwood_crafting_table"
+  ]
+}
