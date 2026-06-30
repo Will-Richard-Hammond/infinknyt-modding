@@ -21,7 +21,7 @@ public class ModBlocks {
                     .strength(2f, 3f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.GLASS)
-                    .solidBlock(Blocks::never)
+                    .nonOpaque()
 
             )
     );
