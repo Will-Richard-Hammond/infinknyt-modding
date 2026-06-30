@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "infinknyt:block/stripped_frostwood_log"
+    },
+    "axis=x": {
+      "model": "infinknyt:block/stripped_frostwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "infinknyt:block/stripped_frostwood_log",
+      "x": 90
+    }
+  }
+}

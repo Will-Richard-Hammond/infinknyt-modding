@@ -9,5 +9,7 @@ public class InfinKnytClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FROSTWOOD_PLANK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FROSTWOOD_LOG, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRIPPED_FROSTWOOD_LOG, RenderLayer.getTranslucent());
     }
 }

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -26,7 +27,17 @@ public class ModBlocks {
             )
     );
     public static final Block FROSTWOOD_LOG = registerBlock("frostwood_log",
-            new Block(AbstractBlock.Settings
+            new PillarBlock(AbstractBlock.Settings
+                    .create()
+                    .strength(2f, 3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+
+            )
+    );
+    public static final Block STRIPPED_FROSTWOOD_LOG = registerBlock("stripped_frostwood_log",
+            new PillarBlock(AbstractBlock.Settings
                     .create()
                     .strength(2f, 3f)
                     .requiresTool()
@@ -52,6 +63,8 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->{
             entries.add(ModBlocks.FROSTWOOD_PLANK);
+            entries.add(ModBlocks.FROSTWOOD_LOG);
+            entries.add(ModBlocks.STRIPPED_FROSTWOOD_LOG);
         } );
     }
 }
