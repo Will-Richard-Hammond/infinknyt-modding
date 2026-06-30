@@ -22,7 +22,7 @@
 			"com.rogueknyt.infinknyt.InfinKnytDataGenerator"
 		],
 		"client": [
-			"com.rogueknyt.InfinKnytClient"
+			"com.rogueknyt.infinknyt.InfinKnytClient"
 		]
 	},
 	"mixins": [
