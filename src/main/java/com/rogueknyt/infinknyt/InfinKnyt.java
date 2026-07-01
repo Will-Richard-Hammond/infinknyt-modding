@@ -5,6 +5,7 @@ import com.rogueknyt.infinknyt.block.entity.ModBlockEntities;
 import com.rogueknyt.infinknyt.block.entity.ModBoats;
 import com.rogueknyt.infinknyt.item.ModItemGroups;
 import com.rogueknyt.infinknyt.item.ModItems;
+import com.rogueknyt.infinknyt.world.FrostwoodBoatIceManager;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -23,6 +24,7 @@ public class InfinKnyt implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();
 		ModBoats.registerBoats();
+		FrostwoodBoatIceManager.register();
 	}
 
 	public static Identifier id(String path) {
