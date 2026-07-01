@@ -82,7 +82,7 @@ public class TranslucentTerraformBoatEntityRenderer extends TerraformBoatEntityR
         VertexConsumer vertexConsumer = vertexConsumers.getBuffer(renderLayer);
         model.render(matrices, vertexConsumer, light, OverlayTexture.DEFAULT_UV, 1.0F, 1.0F, 1.0F, alpha);
 
-        if (!boatEntity.isSubmergedInWater()) {
+        if (!isFrostwood && !boatEntity.isSubmergedInWater()) {
             VertexConsumer waterMask = vertexConsumers.getBuffer(RenderLayer.getWaterMask());
 
             if (model instanceof ModelWithWaterPatch modelWithWaterPatch) {
