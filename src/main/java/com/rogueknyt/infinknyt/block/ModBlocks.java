@@ -3,6 +3,7 @@ package com.rogueknyt.infinknyt.block;
 import com.rogueknyt.infinknyt.InfinKnyt;
 import com.rogueknyt.infinknyt.block.custom.BlacksmithForgeBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import com.rogueknyt.infinknyt.block.custom.FrostwoodCraftingTableBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -56,7 +57,24 @@ public class ModBlocks {
                     .nonOpaque()
             )
     );
+    public static final Block STRIPPED_FROSTWOOD_WOOD = registerBlock("stripped_frostwood_wood",
+            new PillarBlock(AbstractBlock.Settings
+                    .create()
+                    .strength(2f, 3f)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
 
+            )
+    );
+    public static final Block FROSTWOOD_WOOD = registerBlock("frostwood_wood",
+            new PillarBlock(AbstractBlock.Settings
+                    .create()
+                    .strength(2f, 3f)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+
+            )
+    );
     public static final Block BLACKSMITH_FORGE = registerBlock("blacksmith_forge",
             new BlacksmithForgeBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
 
@@ -78,12 +96,17 @@ public class ModBlocks {
     public static void registerModBlocks(){
         InfinKnyt.LOGGER.info("Registering Mod Blocks for " + InfinKnyt.MOD_ID);
 
+        StrippableBlockRegistry.register(FROSTWOOD_LOG, STRIPPED_FROSTWOOD_LOG);
+        StrippableBlockRegistry.register(FROSTWOOD_WOOD, STRIPPED_FROSTWOOD_WOOD);
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->{
             entries.add(ModBlocks.FROSTWOOD_PLANK);
             entries.add(ModBlocks.BLACKSMITH_FORGE);
             entries.add(ModBlocks.FROSTWOOD_LOG);
             entries.add(ModBlocks.STRIPPED_FROSTWOOD_LOG);
             entries.add(ModBlocks.FROSTWOOD_CRAFTING_TABLE);
+            entries.add(ModBlocks.STRIPPED_FROSTWOOD_WOOD);
+            entries.add(ModBlocks.FROSTWOOD_WOOD);
         } );
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addBlocksToFunctionalTab);

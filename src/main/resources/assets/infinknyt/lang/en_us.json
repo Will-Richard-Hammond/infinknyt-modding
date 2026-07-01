@@ -1,4 +1,8 @@
 {
+
+  "itemgroup.infinknyt.infinknyt_items": "InfinKnyt Items",
+  "itemgroup.infinknyt.infinknyt_blocks": "InfinKnyt Blocks",
+
   "item.infinknyt.frostwood_throwing_knife": "Frostwood Throwing Knife",
   "item.infinknyt.iron_billet": "Iron Billet",
   "item.infinknyt.heated_iron_billet": "Heated Iron Billet",
@@ -7,5 +11,7 @@
   "block.infinknyt.frostwood_plank": "Frostwood Plank",
   "block.infinknyt.frostwood_log": "Frostwood Log",
   "block.infinknyt.stripped_frostwood_log": "Stripped Frostwood Log",
-  "block.infinknyt.frostwood_crafting_table": "Frostwood Crafting Table"
+  "block.infinknyt.frostwood_crafting_table": "Frostwood Crafting Table",
+  "block.infinknyt.stripped_frostwood_wood": "Stripped Frostwood Wood",
+  "block.infinknyt.frostwood_wood": "Frostwood Wood"
 }
