@@ -19,7 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FROSTWOOD_THROWING_KNIFE);
                         entries.add(ModItems.IRON_BILLET);
                         entries.add(ModItems.HEATED_IRON_BILLET);
-
+                        entries.add(ModItems.FROSTWOOD_BOAT);
                     }).build());
 
     public static final ItemGroup INFINKNYT_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
