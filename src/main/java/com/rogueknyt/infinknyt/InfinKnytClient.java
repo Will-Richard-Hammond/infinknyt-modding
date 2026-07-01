@@ -13,5 +13,7 @@ public class InfinKnytClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRIPPED_FROSTWOOD_LOG, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FROSTWOOD_CRAFTING_TABLE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRIPPED_FROSTWOOD_WOOD, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FROSTWOOD_WOOD, RenderLayer.getTranslucent());
+        //stairs, slab, trapdoor, door, pressure plate, button, fence, fence gate, sign, boat
     }
 }
