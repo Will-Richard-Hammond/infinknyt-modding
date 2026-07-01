@@ -1,6 +1,7 @@
 package com.rogueknyt.infinknyt.item;
 
 import com.rogueknyt.infinknyt.InfinKnyt;
+import com.rogueknyt.infinknyt.item.custom.HeatedIronBilletItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -13,6 +14,7 @@ public class ModItems {
 
     public static final Item FROSTWOOD_THROWING_KNIFE = registerItem("frostwood_throwing_knife", new Item(new Item.Settings()));
     public static final Item IRON_BILLET = registerItem("iron_billet", new Item(new FabricItemSettings()));
+    public static final Item HEATED_IRON_BILLET = registerItem("heated_iron_billet", new HeatedIronBilletItem(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -23,7 +25,11 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(FROSTWOOD_THROWING_KNIFE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(IRON_BILLET);
+            entries.add(HEATED_IRON_BILLET);
         });
     }
 }

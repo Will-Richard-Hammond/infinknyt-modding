@@ -1,6 +1,7 @@
 package com.rogueknyt.infinknyt;
 
 import com.rogueknyt.infinknyt.block.ModBlocks;
+import com.rogueknyt.infinknyt.block.entity.ModBlockEntities;
 import com.rogueknyt.infinknyt.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,6 +18,7 @@ public class InfinKnyt implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 	}
 
 	public static Identifier id(String path) {

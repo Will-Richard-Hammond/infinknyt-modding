@@ -1,7 +1,9 @@
 {
   "item.infinknyt.frostwood_throwing_knife": "Frostwood Throwing Knife",
   "item.infinknyt.iron_billet": "Iron Billet",
+  "item.infinknyt.heated_iron_billet": "Heated Iron Billet",
 
+  "block.infinknyt.blacksmith_forge": "Blacksmith's Forge",
   "block.infinknyt.frostwood_plank": "Frostwood Plank",
   "block.infinknyt.frostwood_log": "Frostwood Log",
   "block.infinknyt.stripped_frostwood_log": "Stripped Frostwood Log",
