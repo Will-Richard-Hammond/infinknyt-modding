@@ -3,7 +3,8 @@
 	"package": "com.rogueknyt.infinknyt.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"FrostwoodBoatIceMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
