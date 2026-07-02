@@ -31,6 +31,13 @@ public class ModItems {
                     true
             );
 
+    //foods
+    public static final Item FROST_APPLE = registerItem("frost_apple", new Item(new FabricItemSettings().food(ModFoodComponents.FROST_APPLE)));
+
+    //end of foods
+
+
+    //helper methods
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(InfinKnyt.MOD_ID, name), item);
     }
