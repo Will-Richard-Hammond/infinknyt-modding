@@ -1,6 +1,7 @@
 package com.rogueknyt.infinknyt.item;
 
 import com.rogueknyt.infinknyt.InfinKnyt;
+import com.rogueknyt.infinknyt.item.custom.FrostwoodThrowingKnifeItem;
 import com.rogueknyt.infinknyt.item.custom.HeatedIronBilletItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -14,7 +15,10 @@ import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 
 public class ModItems {
 
-    public static final Item FROSTWOOD_THROWING_KNIFE = registerItem("frostwood_throwing_knife", new Item(new Item.Settings()));
+    public static final Item FROSTWOOD_THROWING_KNIFE = registerItem(
+            "frostwood_throwing_knife",
+            new FrostwoodThrowingKnifeItem(new FabricItemSettings().maxCount(16))
+    );
     public static final Item IRON_BILLET = registerItem("iron_billet", new Item(new FabricItemSettings()));
     public static final Item HEATED_IRON_BILLET = registerItem("heated_iron_billet", new HeatedIronBilletItem(new Item.Settings()));
     public static final Item FROSTWOOD_BOAT =

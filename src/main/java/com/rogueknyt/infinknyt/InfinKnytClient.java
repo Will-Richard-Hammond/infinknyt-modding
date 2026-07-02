@@ -1,14 +1,18 @@
 package com.rogueknyt.infinknyt;
 
+
 import com.rogueknyt.infinknyt.block.ModBlocks;
 import com.rogueknyt.infinknyt.block.entity.ModBoats;
 import com.rogueknyt.infinknyt.client.render.TranslucentTerraformBoatEntityRenderer;
+import com.rogueknyt.infinknyt.entity.client.FrostwoodThrowingKnifeRenderer;
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import com.terraformersmc.terraform.boat.impl.TerraformBoatInitializer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import com.rogueknyt.infinknyt.entity.ModEntities;
+
 
 public class InfinKnytClient implements ClientModInitializer {
     @Override
@@ -27,5 +31,10 @@ public class InfinKnytClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(TerraformBoatInitializer.CHEST_BOAT, context ->
                 new TranslucentTerraformBoatEntityRenderer(context, true));
+
+        EntityRendererRegistry.register(
+                ModEntities.FROSTWOOD_THROWING_KNIFE,
+                FrostwoodThrowingKnifeRenderer::new
+        );
     }
 }

@@ -4,6 +4,10 @@
   "itemgroup.infinknyt.infinknyt_blocks": "InfinKnyt Blocks",
 
   "item.infinknyt.frostwood_throwing_knife": "Frostwood Throwing Knife",
+  "tooltip.infinknyt.frostwood_throwing_knife.damage": "Thrown Damage: 3",
+  "tooltip.infinknyt.frostwood_throwing_knife.slowness": "Applies Slowness I for 4 seconds",
+  "tooltip.infinknyt.frostwood_throwing_knife.consumable": "Consumed on use",
+
   "item.infinknyt.iron_billet": "Iron Billet",
   "item.infinknyt.heated_iron_billet": "Heated Iron Billet",
   "item.infinknyt.frostwood_boat": "Frostwood Boat",

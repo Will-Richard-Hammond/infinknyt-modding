@@ -3,11 +3,14 @@ package com.rogueknyt.infinknyt;
 import com.rogueknyt.infinknyt.block.ModBlocks;
 import com.rogueknyt.infinknyt.block.entity.ModBlockEntities;
 import com.rogueknyt.infinknyt.block.entity.ModBoats;
+import com.rogueknyt.infinknyt.entity.ModEntities;
 import com.rogueknyt.infinknyt.item.ModItemGroups;
 import com.rogueknyt.infinknyt.item.ModItems;
+import com.rogueknyt.infinknyt.util.ModFuels;
 import com.rogueknyt.infinknyt.world.FrostwoodBoatIceManager;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -23,8 +26,12 @@ public class InfinKnyt implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();
+		ModEntities.registerModEntities();
 		ModBoats.registerBoats();
 		FrostwoodBoatIceManager.register();
+
+		ModFuels.registerFuels();
+
 	}
 
 	public static Identifier id(String path) {
