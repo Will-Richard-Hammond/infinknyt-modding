@@ -14,8 +14,8 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
 public class FrostwoodThrowingKnifeEntity extends ThrownItemEntity {
-    private static final float DAMAGE = 3.0F;
-    private static final int SLOWNESS_DURATION = 80; // 4 seconds
+    private static final float DAMAGE = 5.0F;
+    private static final int SLOWNESS_DURATION = 40; // 4 seconds
     private static final int SLOWNESS_AMPLIFIER = 0; // Slowness I
 
     public FrostwoodThrowingKnifeEntity(EntityType<? extends FrostwoodThrowingKnifeEntity> entityType, World world) {

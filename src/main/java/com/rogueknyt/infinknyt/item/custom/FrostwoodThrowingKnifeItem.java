@@ -53,7 +53,7 @@ public class FrostwoodThrowingKnifeItem extends Item {
                     user.getPitch(),
                     user.getYaw(),
                     0.0F,
-                    1.6F,
+                    2.4F,
                     1.0F
             );
 

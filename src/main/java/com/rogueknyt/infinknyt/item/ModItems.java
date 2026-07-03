@@ -17,7 +17,7 @@ public class ModItems {
 
     public static final Item FROSTWOOD_THROWING_KNIFE = registerItem(
             "frostwood_throwing_knife",
-            new FrostwoodThrowingKnifeItem(new FabricItemSettings().maxCount(16))
+            new FrostwoodThrowingKnifeItem(new FabricItemSettings())
     );
     public static final Item IRON_BILLET = registerItem("iron_billet", new Item(new FabricItemSettings()));
     public static final Item HEATED_IRON_BILLET = registerItem("heated_iron_billet", new HeatedIronBilletItem(new Item.Settings()));
